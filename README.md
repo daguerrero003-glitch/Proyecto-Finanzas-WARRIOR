@@ -1,2 +1,2 @@
 # Proyecto-Finanzas-WARRIOR
-Este repositorio es diseñado para la asignatura de programación y diseño de aplicaciones.
+Este desarrollo web está diseñado para ofrecer servicios de gestión y educación financiera.
