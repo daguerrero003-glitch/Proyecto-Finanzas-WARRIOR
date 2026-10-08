@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #334155; /* Azul slate suavizado para los párrafos y texto */
+    background-color: #f0f7ff; /* Fondo azul suave pastel */
+    overflow-x: hidden;
+}
+
+.container {
+    width: min(1100px, calc(100% - 2rem));
+    margin: 0 auto;
+}
+
+.sitio-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid #cbd5e1;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 80px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #0284c7; /* Azul cerúleo brillante para Finanzas Warrior */
+    text-decoration: none;
+}
+
+/* Color para los títulos principales (h1) */
+h1 {
+    color: #1e3a8a; /* Azul marino profundo */
+}
