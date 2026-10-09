@@ -13,6 +13,11 @@
     <meta name="author" content="Diego Guerrero">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Google Fonts: Bricolage Grotesque -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
     <title>Finanzas Warrior | Soluciones Financieras</title>
     <!-- El tag de title es para como quiero que se muestre en la web -->
@@ -28,15 +33,45 @@
                 FINANZAS WARRIOR
             </a>
 
+            <!-- Menú Navegación Principal (Escritorio) -->
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li>
+                        <a href="#inicio">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#servicios">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="#nosotros">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#contacto">Contacto</a>
+                    </li>
                 </ul>
             </nav>
+
+            <!-- Botón Hamburguesa para Menú Móvil -->
+            <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">☰</button>
         </div>
+
+        <!-- Menú Navegación Móvil (Desplegable) -->
+        <nav id="mobile-menu" class="mobile-nav">
+            <ul>
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+                <li>
+                    <a href="#servicios">Servicios</a>
+                </li>
+                <li>
+                    <a href="#nosotros">Nosotros</a>
+                </li>
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
