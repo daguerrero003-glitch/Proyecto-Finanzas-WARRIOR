@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<!-- El Doctype indica el tipo de documento HTML -->
 <!-- Nombre: Diego Guerrero -->
-<!-- PROYECTO para ENTREGABLE 2 Y 3 -->
-<!-- FINANZAS WARRIOR -->
+<!-- PROYECTO FINANZAS WARRIOR -->
 <html lang="es">
 
 <head>
-    <!-- La etiqueta meta es para la configuración de la página web -->
     <meta charset="UTF-8">
     <meta name="description" content="Plataforma de gestión financiera, educación e inversiones Finanzas Warrior.">
     <meta name="keywords" content="Finanzas, Educación Financiera, Presupuestos, Inversiones, Diego Guerrero">
     <meta name="author" content="Diego Guerrero">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Font Awesome para los iconos de redes sociales -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Google Fonts: Bricolage Grotesque -->
@@ -21,118 +18,189 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
 
+    <!-- Archivo de Estilos Externo -->
     <link rel="stylesheet" href="css/style.css">
     <title>Finanzas Warrior | Soluciones Financieras</title>
-    <!-- El tag de title es para como quiero que se muestre en la web -->
 </head>
 
 <body>
 
-    <!-- ENCABEZADO - HEADER -->
+    <!-- ENCABEZADO / HEADER -->
     <header class="sitio-header">
         <div class="container header-inner">
             <a href="#inicio" class="logo">
                 <span class="logo-icono">🛡️💰</span>
-                FINANZAS WARRIOR
+                <span class="logo-texto">FINANZAS WARRIOR</span>
             </a>
 
-            <!-- Menú Navegación Principal (Escritorio) -->
+            <!-- Navegación Principal -->
             <nav class="main-nav">
                 <ul>
-                    <li>
-                        <a href="#inicio">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="#servicios">Servicios</a>
-                    </li>
-                    <li>
-                        <a href="#nosotros">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="#contacto">Contacto</a>
-                    </li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto" class="btn-contacto">Contactar</a></li>
                 </ul>
             </nav>
 
-            <!-- Botón Hamburguesa para Menú Móvil -->
-            <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+            <!-- Botón Menú Móvil -->
+            <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
 
-        <!-- Menú Navegación Móvil (Desplegable) -->
+        <!-- Navegación Móvil -->
         <nav id="mobile-menu" class="mobile-nav">
             <ul>
-                <li>
-                    <a href="#inicio">Inicio</a>
-                </li>
-                <li>
-                    <a href="#servicios">Servicios</a>
-                </li>
-                <li>
-                    <a href="#nosotros">Nosotros</a>
-                </li>
-                <li>
-                    <a href="#contacto">Contacto</a>
-                </li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contactar</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- INICIO MAIN (PRINCIPAL) -->
     <main>
-        <h1>Finanzas Warrior</h1>
-        <p>Aprende a dominar tus finanzas personales y toma el control de tu futuro económico.</p>
 
-        <!-- SECCIÓN CARRUSEL -->
-        <section id="carrucel" class="carousel-section container">
-            <h2>Organiza tu Futuro Financiero</h2>
+        <!-- HERO / CARRUSEL INTERACTIVO DE 3 IMÁGENES -->
+        <section id="inicio" class="hero-section">
             <div class="carousel-track" id="carouseltrackebc">
-                
-                <!-- Primera imagen hero -->
+
+                <!-- Diapositiva 1 -->
                 <div class="carousel-slide">
-                    <img src="img/hero1.jpg" alt="imagen homvie hero">
+                    <img src="img/hero1.jpg" alt="Finanzas Warrior Hero 1">
+                    <div class="slide-overlay">
+                        <span class="badge">Experiencia Premium</span>
+                        <h1>Control Financiero <span class="highlight-yellow">En Tu Mano</span></h1>
+                        <p>Transformamos tu relación con el dinero en una experiencia estratégica e inteligente.</p>
+                        <a href="#servicios" class="btn-hero">Descubrir servicios</a>
+                    </div>
                 </div>
 
-                <!-- Segunda imagen hero -->
+                <!-- Diapositiva 2 -->
                 <div class="carousel-slide">
-                    <img src="img/hero2.jpg" alt="imagen homvie1 hero">
+                    <img src="img/hero2.jpg" alt="Finanzas Warrior Hero 2">
+                    <div class="slide-overlay">
+                        <span class="badge badge-red">Estrategia Inmersiva</span>
+                        <h1>Inversiones <span class="highlight-yellow">Inteligentes</span></h1>
+                        <p>Aprende las mejores metodologías para acelerar tus metas económicas y patrimoniales.</p>
+                        <a href="#servicios" class="btn-hero">Cotizar proyecto</a>
+                    </div>
                 </div>
 
-                <!-- Tercera imagen hero -->
+                <!-- Diapositiva 3 -->
                 <div class="carousel-slide">
-                    <img src="img/hero3.jpg" alt="imagen homvie2 hero">
+                    <img src="img/hero3.jpg" alt="Finanzas Warrior Hero 3">
+                    <div class="slide-overlay">
+                        <span class="badge">Estatus Elite</span>
+                        <h1>Educación <span class="highlight-yellow">High Class</span></h1>
+                        <p>Capacitación personalizada para dominar tus presupuestos y libertades económicas.</p>
+                        <a href="#nosotros" class="btn-hero">Conócenos</a>
+                    </div>
                 </div>
 
+            </div>
+
+            <!-- Botones de Navegación del Carrusel -->
+            <button id="btn-prev" class="carousel-arrow prev" aria-label="Imagen anterior">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button id="btn-next" class="carousel-arrow next" aria-label="Imagen siguiente">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <!-- Puntos Indicadores -->
+            <div class="carousel-dots" id="carousel-dots">
+                <button class="dot active" aria-label="Ir a diapositiva 1"></button>
+                <button class="dot" aria-label="Ir a diapositiva 2"></button>
+                <button class="dot" aria-label="Ir a diapositiva 3"></button>
             </div>
         </section>
+
+        <!-- SECCIÓN DE SERVICIOS -->
+        <section id="servicios" class="servicios-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>NUESTROS SERVICIOS</h2>
+                    <h3>Soluciones Financieras a tu Medida</h3>
+                </div>
+
+                <div class="cards-grid">
+                    <!-- Tarjeta 1 -->
+                    <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-couch"></i></div>
+                        <h4>Diseño de Estrategias</h4>
+                        <p>Asesoramiento integral para adaptar tu presupuesto personal a un plan estratégico cómodo y funcional.</p>
+                    </div>
+
+                    <!-- Tarjeta 2 -->
+                    <div class="card">
+                        <div class="card-icon red"><i class="fa-solid fa-volume-high"></i></div>
+                        <h4>Asesoría Patrimonial</h4>
+                        <p>Tratamiento y diversificación de capital con metodologías de protección de activos de alta gama.</p>
+                    </div>
+
+                    <!-- Tarjeta 3 -->
+                    <div class="card">
+                        <div class="card-icon yellow"><i class="fa-solid fa-microchip"></i></div>
+                        <h4>Fintech e Inteligencia</h4>
+                        <p>Aprende a controlar tus metas económicas y presupuestos desde tu smartphone con herramientas tecnológicas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN NOSOTROS -->
+        <section id="nosotros" class="nosotros-section">
+            <div class="container nosotros-inner">
+                <div class="nosotros-img">
+                    <img src="img/hero3.jpg" alt="Experiencia Finanzas Warrior">
+                </div>
+
+                <div class="nosotros-info">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <h3>Apasionados por la cultura financiera y la tecnología.</h3>
+                    <p>En <strong>FINANZAS WARRIOR</strong>, bajo la dirección de Diego Guerrero, integramos metodología de vanguardia, tecnología y análisis para crear estrategias financieras personalizadas.</p>
+                    <p>Brindamos consultoría y soluciones a la medida de tu bolsillo para garantizar crecimiento constante y estabilidad.</p>
+
+                    <div class="stats">
+                        <div class="stat-box">
+                            <span class="stat-num yellow">+150</span>
+                            <span class="stat-lbl">Proyectos</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num red">100%</span>
+                            <span class="stat-lbl">Satisfacción</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <!-- PIE DE PÁGINA / FOOTER -->
-    <footer>
+    <!-- FOOTER / CONTACTO -->
+    <footer id="contacto">
         <div class="footer-social">
             <div class="container social-icons">
-                <a href="https://www.facebook.com/" aria-label="Facebook">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="https://www.instagram.com/blooommx_?utm_source=qr" aria-label="Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://www.youtube.com/" aria-label="YouTube">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-                <a href="https://www.linkedin.com/" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a href="https://x.com/" aria-label="X (Twitter)">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
+                <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://x.com/" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
         </div>
+
         <div class="footer-bottom">
             <div class="container">
-                &copy; <span id="anio"></span> FINANZAS WARRIOR | Todos los derechos reservados
+                &copy; <span id="anio"></span> FINANZAS WARRIOR - Diego Guerrero. Todos los derechos reservados.
             </div>
         </div>
     </footer>
 
+    <!-- Archivo JS Externo -->
     <script src="js/script.js"></script>
 </body>
+
 </html>
